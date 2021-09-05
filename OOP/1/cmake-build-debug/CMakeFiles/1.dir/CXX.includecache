@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.cpp
+matrix.h
+C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h
+iostream
+-
+
+C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h
+cassert
+-
+iostream
+-
+
