@@ -19,8 +19,10 @@ int main() {
    mat1.getMatrix();
    mat2.getMatrix();
 
-   mat1 + mat2;
-   mat2 - mat1;
+   std::cout<<"\nAdd: "<<std::endl;
+   mat1 + mat2;  // mat 1 = mat1 + mat2
+   std::cout<<"\nSub: "<<std::endl;
+   mat1 - mat2;  // mat 1 = начальное mat1
 
  //  mat1.sumRow();
    return 0;

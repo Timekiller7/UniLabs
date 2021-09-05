@@ -92,29 +92,28 @@ public:
     }
 
     // Сложение матриц
-    void operator+(matrix &arg) {
+    void operator+(const matrix &arg) {
         if (mRow == arg.mRow && mCol== arg.mCol) { // Сложение возможно, если только размеры матриц равны
             for (size_t i = 1; i <= mRow; i++) {
                 for (size_t j = 1; j <= mCol; j++) {
                 //    result.el[i][j] += arg.el[i][j];
                 //    result.el[i][j]+=el[i][j];
                     el[i][j] += arg.el[i][j];
-                  std::cout << el[i][j]<<" ";
+                    std::cout << el[i][j]<<" ";
                 }
                 std::cout <<std::endl;
             }
         }
     }
     // Вычитание матриц
-    void operator-(matrix &arg) {
-        if (mRow == arg.mRow && mCol== arg.mCol) { // Сложение возможно, если только размеры матриц равны
-            matrix result; // Копируем данные из *this в result (конструктор копирования)
+    void operator-(const matrix &arg) {
+        if (mRow == arg.mRow && mCol == arg.mCol) {
             for (size_t i = 1; i <= mRow; ++i) {
                 for (size_t j = 1; j <= mCol; ++j) {
-                    el[i][j] += arg.el[i][j];
+                    el[i][j] -= arg.el[i][j];
                     std::cout << el[i][j]<<" ";
                 }
-                std::cout <<std::endl;
+                std::cout << std::endl;
             }
         }
     }
