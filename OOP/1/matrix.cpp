@@ -29,9 +29,10 @@ int main() {
     mat1.sumRow();
 
     std::cout<<"\nSum of elemets in columns: "<<std::endl;
-    mat2.sumCol();
+    mat1.sumCol();
 
-    std::cout<<"\nSet/Get element and: "<<std::endl;
+    std::cout<<"\n\nSet/Get element: "<<std::endl;
+    mat1.getElement(2, 2);
     mat1.setElement(2, 2, 100);
     mat1.getElement(2, 2);
     return 0;
