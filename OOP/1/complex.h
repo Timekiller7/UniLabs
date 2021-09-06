@@ -2,7 +2,7 @@
 #define INC_1_COMPLEX_H
 
 
-class complex {
+class Complex {
 
 };
 
