@@ -6,10 +6,20 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.h
+cassert
+-
+iostream
+-
+
 C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.cpp
 matrix.h
 C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h
+complex.h
+C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.h
 iostream
+-
+ostream
 -
 
 C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h

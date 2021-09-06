@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.cpp">
-			<Option target="1"/>
-		</Unit>
 		<Unit filename="C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.h">
 			<Option target="1"/>
 		</Unit>

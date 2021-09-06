@@ -118,30 +118,6 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1.dir\build
 .PHONY : 1\fast
 
-complex.obj: complex.cpp.obj
-.PHONY : complex.obj
-
-# target to build an object file
-complex.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1.dir\complex.cpp.obj
-.PHONY : complex.cpp.obj
-
-complex.i: complex.cpp.i
-.PHONY : complex.i
-
-# target to preprocess a source file
-complex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1.dir\complex.cpp.i
-.PHONY : complex.cpp.i
-
-complex.s: complex.cpp.s
-.PHONY : complex.s
-
-# target to generate assembly for a file
-complex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1.dir\complex.cpp.s
-.PHONY : complex.cpp.s
-
 matrix.obj: matrix.cpp.obj
 .PHONY : matrix.obj
 
@@ -175,9 +151,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 1
-	@echo ... complex.obj
-	@echo ... complex.i
-	@echo ... complex.s
 	@echo ... matrix.obj
 	@echo ... matrix.i
 	@echo ... matrix.s

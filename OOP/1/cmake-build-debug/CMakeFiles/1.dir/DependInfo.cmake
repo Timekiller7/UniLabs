@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.cpp" "C:/Users/daimonion/source/repos/UniLabs/OOP/1/cmake-build-debug/CMakeFiles/1.dir/complex.cpp.obj"
   "C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.cpp" "C:/Users/daimonion/source/repos/UniLabs/OOP/1/cmake-build-debug/CMakeFiles/1.dir/matrix.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
