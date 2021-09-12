@@ -18,6 +18,10 @@ public:
 
     One &operator=(const One &arg);
 
+    void setChar(const char *str);
+
+    void setFloat(float num);
+
     float getF();
 
     char getPs();

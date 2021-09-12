@@ -34,6 +34,11 @@ Two &Two::operator=(const Two &arg) {
     return *this;
 }
 
+void Two::setAll(const  One obj, string str ) {
+    *p = One(obj);
+    s = str;
+}
+
 void Two::getObject( ) {
     std::cout << "Float in object: " << p->getF() << std::endl;
     std::cout << "Char in object: " << p->getPs() << std::endl;

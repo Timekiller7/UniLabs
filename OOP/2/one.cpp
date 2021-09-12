@@ -16,7 +16,7 @@ One::One(float ff, const char *str) {
     memcpy(ps, str, len);
 }
 
-One::One(const One &arg){
+One::One(const One &arg) {
     f = arg.f;
     size_t len = strlen(arg.ps) + 1;
     ps = new char[len];
@@ -37,6 +37,14 @@ One &One::operator=(const One &arg) {
     memcpy(ps, arg.ps, len);
     f = arg.f;
     return *this;
+}
+
+void One::setChar(const char *str) {
+    memcpy(ps, str, 1);
+}
+
+void One::setFloat(float num) {
+    f = num;
 }
 
 float One::getF() {

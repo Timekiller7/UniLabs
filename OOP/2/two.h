@@ -7,7 +7,7 @@
 using std::string;
 
 class Two {
-    private:
+    protected:
         One *p;
         string s;
 
@@ -21,6 +21,8 @@ class Two {
         ~Two();
 
         Two &operator=(const Two &arg);
+
+        void setAll(const  One obj, string str );
 
         void getObject();
 
