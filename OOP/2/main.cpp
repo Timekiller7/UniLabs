@@ -34,7 +34,7 @@ int main() {
     std::cout  << std::endl;
 
     //по умолчанию в конструкторе One: float = 1,5, char ="t"
-    copy = ob4;
+    copy = ob4;      //меняется только string, тк  новый объект класса One по конструктору
     copy.print();
     std::cout  << std::endl;
 

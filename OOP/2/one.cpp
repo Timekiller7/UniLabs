@@ -17,20 +17,21 @@ One::One(float ff, const char *str) {
 }
 
 One::One(const One &arg){
+    f = arg.f;
     size_t len = strlen(arg.ps) + 1;
     ps = new char[len];
     memcpy(ps, arg.ps, len);
 }
 
 One::~One() {
-    delete[] ps;
+    delete ps;
 }
 
 One &One::operator=(const One &arg) {
     if (this == &arg) {
         return *this;
     }
-    delete[] ps;
+    delete ps;
     size_t len = strlen(arg.ps) + 1;
     ps = new char[len];
     memcpy(ps, arg.ps, len);
