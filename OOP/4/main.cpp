@@ -2,6 +2,7 @@
 #include "one.h"
 #include "two.h"
 #include "thr.h"
+#include "fou.h"
 #include <cstring>
 using std::string;
 //34
@@ -9,6 +10,13 @@ using std::string;
  * float f char* ps
  * string s COne* p
  */
+
+void printAll(Two **y, size_t n) {            //base классом Two объединены
+    for (int i = 0; i < n; i++) {
+        y[i]->print(), std::cout << std::endl;   //функция у каждого класса вызывается, не у одного Two
+    }
+}
+
 int main() {
     string temp = "working";
 
@@ -42,7 +50,7 @@ int main() {
     std::cout  << std::endl;
 
     copy.getObject();
-    copy.setAll(ob, "another test");
+    copy.setAll(ob, "another test: in three and four");
 
     std::cout  << std::endl << "TEST FOR THIRD CLASS: " << std::endl;
 
@@ -53,5 +61,16 @@ int main() {
     ob5.getObject();             //примеры наследования
     ob5.getStrFromThr();    //тк protected переменная в классе Two => получаем доступ
 
+    std::cout  << std::endl << "TEST FOR FOURTH CLASS: " << std::endl;
+    Fou ob6;
+    Two *x[3] ;
+    x[0] = &ob4;
+    x[1] = &ob5;
+    x[2] = &ob6;
+    printAll(x, 3);
+
+  /*  ob5.print();
+    ob6.print();
+    ob6.getStrFromFou(); */
     return 0;
 }

@@ -7,7 +7,7 @@
 Two::Two( ) {
     One obj;
     p = new One(obj);
-    s = "this is a string";
+    s = "this is a string from constructor for Two";
 }
 
 Two::Two(const One *obj, string str) {

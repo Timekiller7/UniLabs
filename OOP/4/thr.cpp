@@ -28,6 +28,6 @@ bool Thr::getBool( ) const {
     return debug;
 }
 
-void Thr::print( ) const {
+void Thr::print( ) {
     std::cout << "Debug is: " << debug<< std::endl;
 }

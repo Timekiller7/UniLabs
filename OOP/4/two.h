@@ -28,7 +28,7 @@ class Two {
 
         void getString( );
 
-        void print();
+        virtual void print();
 
 };
 

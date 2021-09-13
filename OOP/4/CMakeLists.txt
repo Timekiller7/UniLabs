@@ -9,4 +9,4 @@ add_executable(2 main.cpp
         one.cpp
         one.h
         two.cpp
-        two.h thr.cpp thr.h)
+        two.h thr.cpp thr.h Fou.cpp Fou.h)

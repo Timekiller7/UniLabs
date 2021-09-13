@@ -23,7 +23,7 @@ class Thr : public Two {
 
         bool getBool( ) const;
 
-        void print( ) const;
+        virtual void print( );
 };
 
 
