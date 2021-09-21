@@ -1,7 +1,9 @@
 #include "matrix.h"
-#include "complex.h"
+#include "Complex.h"
+#include "Complex.cpp"
 #include <iostream>
 #include <ostream>
+
 
 /*
 *Три конструктора: конструктор умолчания, конструктор с параметрами, конструктор копирования.+
@@ -11,14 +13,29 @@
 */
 
 void main1() {
-    Complex<int> first(10,2);
-    first.set(4, 2);
-    Complex<int> second(4,3);
-   (first + second ).get();
+    Complex<int> first(10, 2);
+    Complex<int> second(1, 3);
+
+    std::cout<<"\nSecond number: ";
     second.get();
+
+    (first + second ).get();  //в "+" и "-" изменяется само first
     (first - second ).get();
+
+    std::cout<<"\nFirst number: ";
+    first.get();
+
     (first * second ).get();
+
+    first.set(8, 1);
+    second.set(2, -3);
     (first / second ).get();
+    
+    std::cout<<"\nFirst number: ";
+    first.get();
+    std::cout<<"\nSecond number: ";
+    second.get();
+}
 
 int main() {
     int value;

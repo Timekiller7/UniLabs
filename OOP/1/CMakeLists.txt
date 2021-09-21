@@ -3,4 +3,4 @@ project(1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(1 matrix.cpp matrix.h complex.h compl.cpp)
+add_executable(1 matrix.cpp matrix.h  Complex.cpp Complex.h)
