@@ -11,17 +11,14 @@
 */
 
 void main1() {
-    Complex first;
+    Complex<int> first(10,2);
     first.set(4, 2);
-    Complex second(6,3);
-   // first.get();
-    (first + second).get();
-    (first - second).get();
-   // first.get();
-  //  second.get();
-    (first * second).get();
-    (first / second).get();
-}
+    Complex<int> second(4,3);
+   (first + second ).get();
+    second.get();
+    (first - second ).get();
+    (first * second ).get();
+    (first / second ).get();
 
 int main() {
     int value;
