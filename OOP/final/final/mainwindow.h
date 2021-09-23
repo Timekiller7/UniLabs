@@ -17,14 +17,17 @@ public:
 
 private slots:
 
-    void on_actionReverse_Top_Box_triggered();
-    void on_actionReverse_Bottom_Box_triggered();
+    void on_actionReverse_Upper_triggered();
+    void on_actionReverse_Lower_triggered();
     void on_actionReverse_All_triggered();
 
-    void on_actionConcat_Top_With_Bottom_triggered();
-    void on_actionConcat_Bottom_With_Top_triggered();
+    void on_actionConcat_Up_And_Low_triggered();
+    void on_actionConcat_Low_And_Up_triggered();
 
     void on_actionCopy_To_Upper_triggered();
+
+    void erase();
+    void both();
 
 private:
     Ui::MainWindow* ui;

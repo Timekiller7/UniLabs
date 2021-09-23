@@ -9,20 +9,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1330</width>
-    <height>180</height>
+    <width>700</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>660</width>
-    <height>180</height>
+    <width>700</width>
+    <height>700</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1330</width>
-    <height>180</height>
+    <width>700</width>
+    <height>700</height>
    </size>
   </property>
   <property name="contextMenuPolicy">
@@ -44,16 +44,27 @@
        <enum>Qt::Vertical</enum>
       </property>
       <widget class="QLineEdit" name="lineEdit">
+       <property name="maximumSize">
+        <size>
+         <width>700</width>
+         <height>400</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <family>Bookman Old Style</family>
+         <pointsize>28</pointsize>
         </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::WheelFocus</enum>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_2">
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <family>Bookman Old Style</family>
+         <pointsize>28</pointsize>
         </font>
        </property>
       </widget>
@@ -69,11 +80,11 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionCopy_To_Upper"/>
-   <addaction name="actionReverse_Top_Box"/>
-   <addaction name="actionReverse_Bottom_Box"/>
+   <addaction name="actionReverse_Upper"/>
+   <addaction name="actionReverse_Lower"/>
    <addaction name="actionReverse_All"/>
-   <addaction name="actionConcat_Top_With_Bottom"/>
-   <addaction name="actionConcat_Bottom_With_Top"/>
+   <addaction name="actionConcat_Up_And_Low"/>
+   <addaction name="actionConcat_Low_And_Up"/>
   </widget>
   <widget class="QStatusBar" name="statusBar">
    <property name="font">
@@ -91,7 +102,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1330</width>
+     <width>700</width>
      <height>21</height>
     </rect>
    </property>
@@ -105,16 +116,16 @@
     <property name="title">
      <string>Reverse</string>
     </property>
-    <addaction name="actionReverse_Top_Box"/>
-    <addaction name="actionReverse_Bottom_Box"/>
+    <addaction name="actionReverse_Upper"/>
+    <addaction name="actionReverse_Lower"/>
     <addaction name="actionReverse_All"/>
    </widget>
    <widget class="QMenu" name="menuConcat">
     <property name="title">
      <string>Concat</string>
     </property>
-    <addaction name="actionConcat_Top_With_Bottom"/>
-    <addaction name="actionConcat_Bottom_With_Top"/>
+    <addaction name="actionConcat_Up_And_Low"/>
+    <addaction name="actionConcat_Low_And_Up"/>
    </widget>
    <addaction name="menuConcat"/>
    <addaction name="menuCopy"/>
@@ -137,7 +148,7 @@
   </action>
   <action name="actionCopy_To_Upper">
    <property name="text">
-    <string>Copy_To_Upper</string>
+    <string>Copy to upper</string>
    </property>
   </action>
   <action name="actionSwap">
@@ -150,14 +161,14 @@
     <string>Clear All</string>
    </property>
   </action>
-  <action name="actionReverse_Top_Box">
+  <action name="actionReverse_Upper">
    <property name="text">
-    <string>Reverse Top Box</string>
+    <string>Reverse  upper</string>
    </property>
   </action>
-  <action name="actionReverse_Bottom_Box">
+  <action name="actionReverse_Lower">
    <property name="text">
-    <string>Reverse Bottom Box</string>
+    <string>Reverse lower</string>
    </property>
   </action>
   <action name="actionReverse_All">
@@ -165,14 +176,20 @@
     <string>Reverse All</string>
    </property>
   </action>
-  <action name="actionConcat_Top_With_Bottom">
+  <action name="actionConcat_Up_And_Low">
    <property name="text">
-    <string>Concat Top With Bottom</string>
+    <string>Concat upper w lower</string>
    </property>
   </action>
-  <action name="actionConcat_Bottom_With_Top">
+  <action name="actionConcat_Low_And_Up">
    <property name="text">
-    <string>Concat Bottom With Top</string>
+    <string>Concat lower w upper</string>
+   </property>
+   <property name="iconText">
+    <string>Concat lower w upper</string>
+   </property>
+   <property name="toolTip">
+    <string>Concat lower w upper</string>
    </property>
   </action>
  </widget>
