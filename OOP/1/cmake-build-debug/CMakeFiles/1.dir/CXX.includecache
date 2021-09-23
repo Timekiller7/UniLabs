@@ -6,23 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.h
-cassert
+C:/Users/daimonion/source/repos/bonch/OOP/1/Complex.cpp
+Complex.h
+C:/Users/daimonion/source/repos/bonch/OOP/1/Complex.h
+cstring
 -
 iostream
 -
 
-C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.cpp
+C:/Users/daimonion/source/repos/bonch/OOP/1/Complex.h
+
+C:/Users/daimonion/source/repos/bonch/OOP/1/matrix.cpp
 matrix.h
-C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h
-complex.h
-C:/Users/daimonion/source/repos/UniLabs/OOP/1/complex.h
+C:/Users/daimonion/source/repos/bonch/OOP/1/matrix.h
+Complex.h
+C:/Users/daimonion/source/repos/bonch/OOP/1/Complex.h
+Complex.cpp
+C:/Users/daimonion/source/repos/bonch/OOP/1/Complex.cpp
 iostream
 -
 ostream
 -
 
-C:/Users/daimonion/source/repos/UniLabs/OOP/1/matrix.h
+C:/Users/daimonion/source/repos/bonch/OOP/1/matrix.h
 cassert
 -
 iostream

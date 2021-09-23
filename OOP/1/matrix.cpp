@@ -30,7 +30,7 @@ void main1() {
     first.set(8, 1);
     second.set(2, -3);
     (first / second ).get();
-    
+
     std::cout<<"\nFirst number: ";
     first.get();
     std::cout<<"\nSecond number: ";

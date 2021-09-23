@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1330</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>660</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1330</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCopy_To_Upper"/>
+   <addaction name="actionReverse_Top_Box"/>
+   <addaction name="actionReverse_Bottom_Box"/>
+   <addaction name="actionReverse_All"/>
+   <addaction name="actionConcat_Top_With_Bottom"/>
+   <addaction name="actionConcat_Bottom_With_Top"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="font">
+    <font>
+     <family>Showcard Gothic</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1330</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCopy">
+    <property name="title">
+     <string>Copy</string>
+    </property>
+    <addaction name="actionCopy_To_Upper"/>
+   </widget>
+   <widget class="QMenu" name="menuReverse">
+    <property name="title">
+     <string>Reverse</string>
+    </property>
+    <addaction name="actionReverse_Top_Box"/>
+    <addaction name="actionReverse_Bottom_Box"/>
+    <addaction name="actionReverse_All"/>
+   </widget>
+   <widget class="QMenu" name="menuConcat">
+    <property name="title">
+     <string>Concat</string>
+    </property>
+    <addaction name="actionConcat_Top_With_Bottom"/>
+    <addaction name="actionConcat_Bottom_With_Top"/>
+   </widget>
+   <addaction name="menuConcat"/>
+   <addaction name="menuCopy"/>
+   <addaction name="menuReverse"/>
+  </widget>
+  <action name="actionClear_Top_Box">
+   <property name="text">
+    <string>Clear Top Box</string>
+   </property>
+  </action>
+  <action name="actionClear_Bottom_Box">
+   <property name="text">
+    <string>Clear Bottom Box</string>
+   </property>
+  </action>
+  <action name="actionFrom_Top_Box_to_Bottom_Box">
+   <property name="text">
+    <string>From Top Box to Bottom Box</string>
+   </property>
+  </action>
+  <action name="actionCopy_To_Upper">
+   <property name="text">
+    <string>Copy_To_Upper</string>
+   </property>
+  </action>
+  <action name="actionSwap">
+   <property name="text">
+    <string>Swap</string>
+   </property>
+  </action>
+  <action name="actionClear_All">
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+  <action name="actionReverse_Top_Box">
+   <property name="text">
+    <string>Reverse Top Box</string>
+   </property>
+  </action>
+  <action name="actionReverse_Bottom_Box">
+   <property name="text">
+    <string>Reverse Bottom Box</string>
+   </property>
+  </action>
+  <action name="actionReverse_All">
+   <property name="text">
+    <string>Reverse All</string>
+   </property>
+  </action>
+  <action name="actionConcat_Top_With_Bottom">
+   <property name="text">
+    <string>Concat Top With Bottom</string>
+   </property>
+  </action>
+  <action name="actionConcat_Bottom_With_Top">
+   <property name="text">
+    <string>Concat Bottom With Top</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
