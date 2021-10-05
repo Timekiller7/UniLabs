@@ -10,7 +10,7 @@ Thr::Thr(const bool bug, const Two &arg): Two(arg) {
     debug = bug;
 }
 
-Thr::Thr(const Thr &arg) {
+Thr::Thr(const Thr &arg): Two(arg) {
     debug = arg.debug;
 }
 

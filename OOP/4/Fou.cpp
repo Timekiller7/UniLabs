@@ -10,7 +10,7 @@ Fou::Fou(string str, const Thr &arg): Thr(arg) {
     colour = "yellow";
 }
 
-Fou::Fou(const Fou &arg) {
+Fou::Fou(const Fou &arg): Thr(arg) {
     colour = arg.colour;
 }
 

@@ -57,8 +57,17 @@ int main() {
     Thr ob5(true, copy);
     std::cout  <<ob5.getBool() << std::endl;
     ob5.setBool(false);
+   
     std::cout  <<ob5.getBool() << std::endl;
+    Thr copy2(ob5);
+    std::cout << "copy2" << std::endl;
+   // std::cout << copy2.getBool() << std::endl;
+    copy2.getObject();
+    copy2.getBool();
+    copy2.print();
     ob5.getObject();             //примеры наследования
+    ob5.getBool();
+    ob5.print();
     ob5.getStrFromThr();    //тк protected переменная в классе Two => получаем доступ
 
     std::cout  << std::endl << "TEST FOR FOURTH CLASS: " << std::endl;
@@ -69,8 +78,8 @@ int main() {
     x[2] = &ob6;
     printAll(x, 3);
 
-  /*  ob5.print();
+    ob5.print();
     ob6.print();
-    ob6.getStrFromFou(); */
+    ob6.getStrFromFou();
     return 0;
 }
